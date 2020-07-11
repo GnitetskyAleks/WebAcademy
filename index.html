@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Static Template</title>
+    <style>
+      figure {
+        width: 100%; /* Ширина области */
+        /*height: 500px;*/ /* Высота области */
+        margin: 0; /* Обнуляем отступы */
+        overflow: hidden; /* Прячем всё за пределами */
+        min-width: 400px; /* Минимальная ширина */
+      }
+      figure img {
+        width: 100%; /* Ширина изображений */
+        margin: -10% 0 0 0; /* Сдвигаем вверх */
+      }
+    </style>
   </head>
   <body>
-    <h1>Tlved!</h1>
+    <div class="block">
+      <div class="label">Введите названия города</div>
+      <input type="text" class="city" value="kiev">
+    </div>
+    <div class="block">
+      <div class="label">Введите дату</div>
+      <input type="date" class="date">
+    </div>   
+    
+    <input type="button" class="find_weather" value="Найти погоду">
+    
+    <figure>
+      <img
+        src="https://i.ytimg.com/vi/q6GUaag_Otc/maxresdefault.jpg"
+        alt="Котики"
+      />
+    </figure>
   </body>
+  <script src="index.js"></script>
 </html>

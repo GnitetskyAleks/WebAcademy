@@ -1,14 +1,15 @@
-.my_div {
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.block {
+  display: flex; 
+}
+
+.date {
   
-  .my_img {
-    /* max-width: 100%;
-    height: auto;*/
-  }
-  
+}
+
+.city {
+}
+
+.label {
+  min-width: 180px;
+  font : 90% arial;
+}
