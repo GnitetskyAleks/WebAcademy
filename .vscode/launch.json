@@ -3,22 +3,25 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [
+    "configurations": [ 
         {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
             // "url": "http://localhost:8080",
-            "url": "file:///C:/my_project/WebAcademy/index.html",
+           // "url": "file:///C:/my_project/WebAcademy/index.html",
+            "file": "${workspaceFolder}/index.html",
+            "url": "${workspaceFolder}",           
             "webRoot": "${workspaceFolder}"
-        }, 
+        },  
         {
+            "type": "chrome",
+            "request": "attach",
             "name": "Attach to Chrome",
             "port": 9222,
-            "request": "attach",
-            "type": "pwa-chrome",
-            "webRoot": "${workspaceFolder}"
-        },               
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/src"
+            },             
         {
             "type": "browser-preview",
             "request": "launch",

@@ -16,28 +16,37 @@
       }
       figure img {
         width: 100%; /* Ширина изображений */
-        margin: -10% 0 0 0; /* Сдвигаем вверх */
+        margin: 0 0 0 0; /* Сдвигаем вверх */
       }
     </style>
   </head>
   <body>
-    <div class="block">
-      <div class="label">Введите названия города</div>
-      <input type="text" class="city" value="kiev">
-    </div>
-    <div class="block">
-      <div class="label">Введите дату</div>
-      <input type="date" class="date">
-    </div>   
-    
-    <input type="button" class="find_weather" value="Найти погоду">
-    
-    <figure>
-      <img
-        src="https://i.ytimg.com/vi/q6GUaag_Otc/maxresdefault.jpg"
-        alt="Котики"
-      />
-    </figure>
+    <body>
+
+        <div class="overlay"></div>
+        <div class="popup">
+          <div class="box">
+            <div class="block_button">Вход</div>
+            <div class="block">
+              <label for="login">Логин</label>
+              <input type="text" id="login" />
+            </div>
+            <div class="block">
+              <label for="pass">Пароль</label>
+              <input type="password" id="pass" />
+            </div>
+            <div class="block_button">
+              <input type="button" id="log_ok" value="Авторизоваться" />          
+            </div>
+          </div>
+        </div>
+
+
+      <!-- 
+      <figure>
+        <img src="https://www.catgifpage.com/gifs/318.gif" alt="Котики" />
+      </figure> -->
+    </body>
   </body>
   <script src="index.js"></script>
 </html>
